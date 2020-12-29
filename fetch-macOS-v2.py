@@ -110,7 +110,6 @@ def get_image_info(session, bid, mlb=MLB_ZERO, diag=False, os_type='default', ci
         'User-Agent': 'InternetRecovery/1.0',
         'Cookie': session,
         'Content-Type': 'text/plain',
-        'Expect': ''
     }
 
     post = {
