@@ -36,8 +36,8 @@ args=(
   -usb -device usb-kbd -device usb-tablet
   -smp "$CPU_THREADS",cores="$CPU_CORES",sockets="$CPU_SOCKETS"
   -device usb-ehci,id=ehci
-  -device usb-kbd,bus=ehci.0
-  -device usb-mouse,bus=ehci.0
+  #-device usb-kbd,bus=ehci.0
+  #-device usb-mouse,bus=ehci.0
   -device nec-usb-xhci,id=xhci
   -device isa-applesmc,osk="ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
   -drive if=pflash,format=raw,readonly,file="$REPO_PATH/$OVMF_DIR/OVMF_CODE.fd"
